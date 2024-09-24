@@ -1,0 +1,113 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.table {
+    border-collapse: collapse;
+    background-color: rgb(236, 177, 99);
+    margin: auto;
+    text-align: center;
+}
+
+.row1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.col1 {
+    padding: 60px;
+    padding-left: 120px;
+    text-align: center;
+}
+
+.table tr:nth-child(3) {
+
+    td:nth-child(2),
+    td:nth-child(3) {
+        text-align: left;
+        padding: 75px 0px;
+        padding-right: 40px;
+        background-color: black;
+        color: white;
+    }
+
+    td:nth-child(2):hover {
+        background-color: rgb(185, 67, 67);
+    }
+
+    td:nth-child(3):hover {
+        background-color: rgb(214, 201, 86);
+    }
+
+}
+
+.table tr:nth-child(2) {
+
+    td:nth-child(2),
+    td:nth-child(3) {
+        text-align: left;
+        padding: 75px 0px;
+        padding-right: 40px;
+        background-color: black;
+        color: white;
+        margin: 0px;
+    }
+
+    td:nth-child(2):hover {
+        background-color: rgb(49, 185, 174);
+    }
+
+    td:nth-child(3):hover {
+        background-color: rgb(185, 94, 170);
+    }
+}
+
+.list1,
+.list2,
+.list3,
+.list4 {
+    width: 100%;
+    text-align: left;
+
+}
+
+.box1:hover {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(14, 14, 94, 0.918);
+}
+
+.box2:hover {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(82, 5, 69, 0.897);
+}
+
+.box3:hover {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(100, 11, 11, 0.938);
+}
+
+.box4:hover {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgb(77, 78, 12);
+}
+
+.list1 li:hover {
+    background-color: rgba(0, 255, 234, 0.911);
+}
+
+.list2 li:hover {
+    background-color: rgba(255, 27, 217, 0.808);
+}
+
+.list3 li:hover {
+    background-color: rgba(255, 39, 39, 0.829);
+}
+
+.list4 li:hover {
+    background-color: rgba(255, 233, 32, 0.877);
+}

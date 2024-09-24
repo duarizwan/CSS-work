@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(212, 185, 255);
+}
+
+.content {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.topbar {
+    padding: 30px 0px;
+    background-color: black;
+    position: relative;
+}
+
+.topbar li {
+    display: inline-block;
+    padding: 10px 20px;
+    list-style: none;
+
+}
+
+.topbar li:hover {
+    background-color: rgba(37, 37, 37, 0.8);
+}
+
+.topbar li:hover .Dropdown,
+.topbar li:hover .Dropdown2,
+.Dropdown li:hover .sub-dropdown{
+    display: block;
+}
+
+.topbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.Dropdown li,
+.Dropdown2 li,
+.sub-dropdown li{
+    display: block;
+    text-align: left;
+    padding: 5px;
+    border-top: 1px solid purple;
+}
+
+.Dropdown li:hover,
+.Dropdown2 li:hover {
+    background-color: rgba(128, 0, 128, 0.815);
+}
+
+.Dropdown,
+.Dropdown2,
+.sub-dropdown {
+    position: absolute;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.884);
+    display: none;
+    margin-top: 10px;
+}
+.sub-dropdown{
+    width: 200px;
+    left: 160px;
+    top: 90px;
+    li{
+        border-top: 1px solid greenyellow;
+    }
+    li:hover{
+        background-color: rgb(133, 201, 32);
+    }
+}
+
+.box{
+    margin: auto;
+    display: inline;
+    text-align: center;
+}
+.box div{
+    
+    margin-top: 15%;
+    font-size: 30px;
+}
+.box div h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(8, 8, 87);
+    position: relative;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0%;
+        left: 0%;
+        height: 100px;
+        width: 80px;
+    }
+
+    20% {
+        top: calc(100vh - 90px);
+        left: 20%;
+        height: 70px;
+        width: 90px;
+    }
+
+    40% {
+        top: 5vh;
+        left: 40%;
+        height: 100px;
+        width: 80px;
+    }
+
+    60% {
+        top: calc(100vh - 100px);
+        left: 60%;
+        height: 70px;
+        width: 90px;
+    }
+
+    80% {
+        top: 15vh;
+        left: 80%;
+        height: 100px;
+        width: 70px;
+    }
+
+    100% {
+        top: calc(100vh - 90px);
+        left: calc(100% - 100px);
+        height: 70px;
+    }
+
+}
