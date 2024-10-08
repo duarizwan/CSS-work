@@ -1,14 +1,47 @@
-@media only screen and (max-width:1024px) {
-    .navigation .List1 {
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+
+    /* reduce heading size */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .navigation .nav_items {
         gap: 20px;
     }
 
     .home-content {
         max-width: 100%;
-    }
-
-    .main-heading {
-        font-size: 48px;
     }
 
     .profile-image img {
@@ -25,7 +58,7 @@
         width: 100%;
     }
 
-    .boxes {
+    .services {
         flex-direction: column;
         gap: 30px;
     }
@@ -38,7 +71,8 @@
         max-width: 90%;
     }
 
-    .work, .packet div {
+    .work,
+    .packet div {
         padding: 40px 20px;
     }
 
@@ -60,26 +94,25 @@
         gap: 20px;
     }
 
-    #portfolio-1, #portfolio-2, #portfolio-3 {
+    #portfolio-1,
+    #portfolio-2,
+    #portfolio-3 {
         height: 250px;
     }
 
     .tab1 {
-        display: flex;
         justify-content: center;
         gap: 10px;
+        display: flex;
     }
 
     .maxWidth {
-        padding: 0px 20px;
+        padding: 0 20px;
         display: block;
     }
 
-    p {
-        font-size: 12px;
-    }
-
-    .work:first-child, #portfolio-1:first-child {
+    .work:first-child,
+    #portfolio-1:first-child {
         grid-column: span 1;
     }
 
@@ -92,27 +125,27 @@
     }
 
     .profile-image {
-        position: static;
-        display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        display: flex;
+        position: static;
     }
 
     .profile-image img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
         object-fit: cover;
         object-position: top;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 4px 10px #0000001a;
     }
 
     .intro {
-        display: flex;
-        flex-direction: column-reverse;
         text-align: center;
+        flex-direction: column-reverse;
         height: auto;
-        padding: 100px 0px 70px;
+        padding: 100px 0 70px;
+        display: flex;
     }
 
     .profile-image img {
@@ -121,18 +154,18 @@
     }
 
     .sidebar {
-        bottom: 0;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin: auto;
-        justify-content: center;
+        bottom: 0;
         left: 0;
         right: 0;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .navigation .List1 {
+    .navigation .nav_items {
         display: none;
     }
 
@@ -146,10 +179,6 @@
 
     .home-content {
         max-width: 100%;
-    }
-
-    .main-heading {
-        font-size: 36px;
     }
 
     .profile-image img {
@@ -166,9 +195,16 @@
         width: 100%;
     }
 
-    .boxes {
+    .services {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .services_div {
+        /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
+
+        display: flex;
+        flex-direction: column;
     }
 
     .maxWidth {
@@ -176,11 +212,12 @@
     }
 
     .contact-tagline {
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
 
-    .work, .packet div {
+    .work,
+    .packet div {
         padding: 20px 10px;
     }
 
@@ -193,21 +230,13 @@
         padding: 20px 10px;
     }
 
-    .work:first-child, #portfolio-1:first-child {
+    .work:first-child,
+    #portfolio-1:first-child {
         grid-column: span 1;
-    }
-
-    .exp {
-        font-size: 20px;
     }
 
     .exp-details {
         text-align: left;
-        font-size: 14px;
-    }
-
-    .year {
-        font-size: 12px;
     }
 
     .prog {
@@ -219,7 +248,9 @@
         gap: 15px;
     }
 
-    #portfolio-1, #portfolio-2, #portfolio-3 {
+    #portfolio-1,
+    #portfolio-2,
+    #portfolio-3 {
         height: 200px;
     }
 
@@ -228,13 +259,8 @@
         gap: 5px;
     }
 
-    .footer {
-        padding: 20px 0;
-        font-size: 14px;
-    }
-
     .maxWidth {
-        padding: 0px 20px;
+        padding: 0 20px;
     }
 
     .Home {
@@ -242,27 +268,27 @@
     }
 
     .profile-image {
-        position: static;
-        display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        display: flex;
+        position: static;
     }
 
     .profile-image img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
         object-fit: cover;
         object-position: top;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 4px 10px #0000001a;
     }
 
     .intro {
-        display: flex;
-        flex-direction: column-reverse;
         text-align: center;
+        flex-direction: column-reverse;
         height: auto;
-        padding: 100px 0px 70px;
+        padding: 100px 0 70px;
+        display: flex;
     }
 
     .profile-image img {
@@ -271,11 +297,11 @@
     }
 
     .sidebar {
-        bottom: 0;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin: auto;
-        justify-content: center;
+        bottom: 0;
         left: 0;
         right: 0;
     }
